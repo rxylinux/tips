@@ -2,6 +2,7 @@
 <table>
     <tr>
         <td>Foo</td>
+        <td>Foo1</td>
     </tr>
 </table>
 这是另外一个普通短路
@@ -73,3 +74,68 @@ use test <code>printf()</code> function
 ``There is a literal backtick (`) here.``
 
 <http://example.com/>
+
+
+
+
+this is a [http://www.baidu.com](http://www.baidu.com "baidu") website you can search everything what you do not know
+
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+
+   
+
+
+   
+
+
+<table>
+        <tr>
+            <th>设备</th>
+            <th>设备文件名</th>
+            <th>文件描述符</th>
+            <th>类型</th>
+        </tr>
+        <tr>
+            <th>键盘</th>
+            <th>/dev/stdin</th>
+            <th>0</th>
+            <th>标准输入</th>
+        </tr>
+        <tr>
+            <th>显示器</th>
+            <th>/dev/stdout</th>
+            <th>1</th>
+            <th>标准输出</th>
+        </tr>
+        <tr>
+            <th>显示器</th>
+            <th>/dev/stderr</th>
+            <th>2</th>
+            <th>标准错误输出</th>
+        </tr>
+    </table>
