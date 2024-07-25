@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://xtrojan.org/blog/ax3600-shellclash.html -->
+<html lang="zh-CN" prefix="og: https://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10.0, user-scalable=yes">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<style>
+#wpadminbar #wp-admin-bar-p404_free_top_button .ab-icon:before {
+content: "\f103";
+color:red;
+top: 2px;
+}
+</style>
+<script async="" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/matomo.js"></script><script type="text/javascript" id="wpp-js" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/wpp.min.js" data-sampling="0" data-sampling-rate="100" data-api-url="https://xtrojan.org/wp-json/wordpress-popular-posts" data-post-id="3783" data-token="0784d168f4" data-lang="0" data-debug="0"></script>
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技</title>
+<meta name="description" content="小米 AX3600 采用的是高通 IPQ8071A 4核心 1.4GHz A53 的 CPU，外加上双核主频高达 1.7GHz 的 NPU，这让这款路由器的跑「加密解密」类的代理性能特别特别的好。开启 SSH 和 安装 ShellClash 都不会影响固件正常的更新升级，也不会影响官方固件的功能，">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://xtrojan.org/blog/ax3600-shellclash.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技">
+<meta property="og:description" content="小米 AX3600 采用的是高通 IPQ8071A 4核心 1.4GHz A53 的 CPU，外加上双核主频高达 1.7GHz 的 NPU，这让这款路由器的跑「加密解密」类的代理性能特别特别的好。开启 SSH 和 安装 ShellClash 都不会影响固件正常的更新升级，也不会影响官方固件的功能，">
+<meta property="og:url" content="https://xtrojan.org/blog/ax3600-shellclash.html">
+<meta property="og:site_name" content="XTrojan黑科技">
+<meta property="article:tag" content="AX3600">
+<meta property="article:tag" content="ShellClash">
+<meta property="article:section" content="博文">
+<meta property="og:updated_time" content="2022-08-26T07:18:38+08:00">
+<meta property="og:image" content="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2.jpg">
+<meta property="og:image:secure_url" content="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="735">
+<meta property="og:image:alt" content="AX3600 ShellClash 教程｜官方固件使用代理插图">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2022-08-26T07:17:38+08:00">
+<meta property="article:modified_time" content="2022-08-26T07:18:38+08:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技">
+<meta name="twitter:description" content="小米 AX3600 采用的是高通 IPQ8071A 4核心 1.4GHz A53 的 CPU，外加上双核主频高达 1.7GHz 的 NPU，这让这款路由器的跑「加密解密」类的代理性能特别特别的好。开启 SSH 和 安装 ShellClash 都不会影响固件正常的更新升级，也不会影响官方固件的功能，">
+<meta name="twitter:image" content="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2.jpg">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="XTrojan黑科技">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="1 分钟">
+<!-- /Rank Math WordPress SEO插件 -->
+<link rel="alternate" type="application/rss+xml" title="XTrojan黑科技 » Feed" href="https://xtrojan.org/feed">
+<link rel="alternate" type="application/rss+xml" title="XTrojan黑科技 » 评论 Feed" href="https://xtrojan.org/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="XTrojan黑科技 » AX3600 ShellClash 教程｜官方固件使用代理 评论 Feed" href="https://xtrojan.org/blog/ax3600-shellclash.html/feed">
+<style id="rank-math-toc-block-style-inline-css" type="text/css">
+.wp-block-rank-math-toc-block nav ol{counter-reset:item}.wp-block-rank-math-toc-block nav ol li{display:block}.wp-block-rank-math-toc-block nav ol li:before{content:counters(item, ".") ". ";counter-increment:item}
+</style>
+<!-- <link rel='stylesheet' id='ez-toc-css' href='https://xtrojan.org/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.68.1' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/8heht.css" media="all">
+<style id="ez-toc-inline-css" type="text/css">
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}
+</style>
+<!-- <link rel='stylesheet' id='wordpress-popular-posts-css-css' href='https://xtrojan.org/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=7.0.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='font-awesome-css' href='https://xtrojan.org/wp-content/themes/customify/assets/fonts/font-awesome/css/font-awesome.min.css?ver=5.0.0' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='customify-style-css' href='https://xtrojan.org/wp-content/themes/customify/style.min.css?ver=0.4.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/8heht(1).css" media="all">
+<style id="customify-style-inline-css" type="text/css">
+.customify-container, .layout-contained, .site-framed .site, .site-boxed .site { max-width: 1440px; } .main-layout-content .entry-content > .alignwide { width: calc( 1440px - 4em ); max-width: 100vw;  }#blog-posts .posts-layout .entry-media {border-radius: 5px;}.header-top .header--row-inner,body:not(.fl-builder-edit) .button,body:not(.fl-builder-edit) button:not(.menu-mobile-toggle, .components-button, .customize-partial-edit-shortcut-button),body:not(.fl-builder-edit) input[type="button"]:not(.ed_button),button.button,input[type="button"]:not(.ed_button, .components-button, .customize-partial-edit-shortcut-button),input[type="reset"]:not(.components-button, .customize-partial-edit-shortcut-button),input[type="submit"]:not(.components-button, .customize-partial-edit-shortcut-button),.pagination .nav-links > *:hover,.pagination .nav-links span,.nav-menu-desktop.style-full-height .primary-menu-ul > li.current-menu-item > a,.nav-menu-desktop.style-full-height .primary-menu-ul > li.current-menu-ancestor > a,.nav-menu-desktop.style-full-height .primary-menu-ul > li > a:hover,.posts-layout .readmore-button:hover{    background-color: #235787;}.posts-layout .readmore-button {color: #235787;}.pagination .nav-links > *:hover,.pagination .nav-links span,.entry-single .tags-links a:hover,.entry-single .cat-links a:hover,.posts-layout .readmore-button,.posts-layout .readmore-button:hover{    border-color: #235787;}.customify-builder-btn{    background-color: #c3512f;}body{    color: #686868;}abbr, acronym {    border-bottom-color: #686868;}a                {                    color: #0081b5;}a:hover,a:focus,.link-meta:hover, .link-meta a:hover{    color: #111111;}h2 + h3,.comments-area h2 + .comments-title,.h2 + h3,.comments-area .h2 + .comments-title,.page-breadcrumb {    border-top-color: #eaecee;}blockquote,.site-content .widget-area .menu li.current-menu-item > a:before{    border-left-color: #eaecee;}@media screen and (min-width: 64em) {    .comment-list .children li.comment {        border-left-color: #eaecee;    }    .comment-list .children li.comment:after {        background-color: #eaecee;    }}.page-titlebar, .page-breadcrumb,.posts-layout .entry-inner {    border-bottom-color: #eaecee;}.header-search-form .search-field,.entry-content .page-links a,.header-search-modal,.pagination .nav-links > *,.entry-footer .tags-links a, .entry-footer .cat-links a,.search .content-area article,.site-content .widget-area .menu li.current-menu-item > a,.posts-layout .entry-inner,.post-navigation .nav-links,article.comment .comment-meta,.widget-area .widget_pages li a, .widget-area .widget_categories li a, .widget-area .widget_archive li a, .widget-area .widget_meta li a, .widget-area .widget_nav_menu li a, .widget-area .widget_product_categories li a, .widget-area .widget_recent_entries li a, .widget-area .widget_rss li a,.widget-area .widget_recent_comments li{    border-color: #eaecee;}.header-search-modal::before {    border-top-color: #eaecee;    border-left-color: #eaecee;}@media screen and (min-width: 48em) {    .content-sidebar.sidebar_vertical_border .content-area {        border-right-color: #eaecee;    }    .sidebar-content.sidebar_vertical_border .content-area {        border-left-color: #eaecee;    }    .sidebar-sidebar-content.sidebar_vertical_border .sidebar-primary {        border-right-color: #eaecee;    }    .sidebar-sidebar-content.sidebar_vertical_border .sidebar-secondary {        border-right-color: #eaecee;    }    .content-sidebar-sidebar.sidebar_vertical_border .sidebar-primary {        border-left-color: #eaecee;    }    .content-sidebar-sidebar.sidebar_vertical_border .sidebar-secondary {        border-left-color: #eaecee;    }    .sidebar-content-sidebar.sidebar_vertical_border .content-area {        border-left-color: #eaecee;        border-right-color: #eaecee;    }    .sidebar-content-sidebar.sidebar_vertical_border .content-area {        border-left-color: #eaecee;        border-right-color: #eaecee;    }}article.comment .comment-post-author {background: #6d6d6d;}.pagination .nav-links > *,.link-meta,.link-meta a,.color-meta,.entry-single .tags-links:before,.entry-single .cats-links:before{    color: #6d6d6d;}h1, h2, h3, h4, h5, h6 { color: #2b2b2b;}.site-content .widget-title { color: #444444;}#page-cover {background-image: url("https://xtrojan.org/wp-content/themes/customify/assets/images/default-cover.jpg");}.sub-menu .li-duplicator {display:none !important;}.header-search_icon-item .header-search-modal  {border-style: solid;} .header-search_icon-item .search-field  {border-style: solid;} .dark-mode .header-search_box-item .search-form-fields, .header-search_box-item .search-form-fields  {border-style: solid;} .builder-item--primary-menu .nav-icon-angle { width: 3px; height: 3px; }.builder-item--primary-menu .nav-menu-desktop .primary-menu-ul > li > a,.builder-item-sidebar .primary-menu-sidebar .primary-menu-ul > li > a {font-size: 16px;}body  {background-color: #FFFFFF;} .site-content .content-area  {background-color: #FFFFFF;} /* CSS for desktop */#blog-posts .posts-layout .entry-media, #blog-posts .posts-layout.layout--blog_classic .entry-media {flex-basis: 39%; width: 39%;}#page-cover .page-cover-inner {min-height: 300px;}.header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {min-height: 33px;}.header--row.header-main .customify-grid, .header--row.header-main .style-full-height .primary-menu-ul > li > a {min-height: 90px;}.header--row.header-bottom .customify-grid, .header--row.header-bottom .style-full-height .primary-menu-ul > li > a {min-height: 55px;}.site-header .site-branding img { max-width: 0px; } .site-header .cb-row--mobile .site-branding img { width: 0px; }.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.header-search_box-item .search-submit{margin-left: -40px;} .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;} .header-search_box-item .header-search-form button.search-submit{margin-left:-40px;}.header--row .builder-first--primary-menu {text-align: right;}/* CSS for tablet */@media screen and (max-width: 1024px) { #page-cover .page-cover-inner {min-height: 250px;}.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.header-search_box-item .search-submit{margin-left: -40px;} .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;} .header-search_box-item .header-search-form button.search-submit{margin-left:-40px;} }/* CSS for mobile */@media screen and (max-width: 568px) { #page-cover .page-cover-inner {min-height: 200px;}.header--row.header-top .customify-grid, .header--row.header-top .style-full-height .primary-menu-ul > li > a {min-height: 33px;}.header--row .builder-first--nav-icon {text-align: right;}.header-search_icon-item .search-submit {margin-left: -40px;}.header-search_box-item .search-submit{margin-left: -40px;} .header-search_box-item .woo_bootster_search .search-submit{margin-left: -40px;} .header-search_box-item .header-search-form button.search-submit{margin-left:-40px;} }
+</style>
+<script src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/8heht.js" type="text/javascript"></script>
+<!-- <script type="text/javascript" src="https://xtrojan.org/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script> -->
+<!-- <script type="text/javascript" src="https://xtrojan.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script> -->
+<link rel="https://api.w.org/" href="https://xtrojan.org/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://xtrojan.org/wp-json/wp/v2/posts/3783"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xtrojan.org/xmlrpc.php?rsd">
+<link rel="shortlink" href="https://xtrojan.org/?p=3783">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://xtrojan.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxtrojan.org%2Fblog%2Fax3600-shellclash.html">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://xtrojan.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fxtrojan.org%2Fblog%2Fax3600-shellclash.html&amp;format=xml">
+<style id="wpp-loading-animation-styles">@-webkit-keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}@keyframes bgslide{from{background-position-x:0}to{background-position-x:-200%}}.wpp-widget-block-placeholder,.wpp-shortcode-placeholder{margin:0 auto;width:60px;height:3px;background:#dd3737;background:linear-gradient(90deg,#dd3737 0%,#571313 10%,#dd3737 100%);background-size:200% auto;border-radius:3px;-webkit-animation:bgslide 1s infinite linear;animation:bgslide 1s infinite linear}</style>
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u9996\u9875","url":"https:\/\/xtrojan.org\/"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u767e\u79d1","url":"https:\/\/xtrojan.org\/.\/wiki"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u670d\u52a1\u5668","url":"https:\/\/xtrojan.org\/.\/server"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Shadowsocks\/SS\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/ss-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"ShadowsocksR\/SSR\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/ssr-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"V2Ray\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/v2ray-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Trojan\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/trojan-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Trojan-Go\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/trojan-go-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"XTLS\/Xray\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/xray-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"WireGuard\u5ba2\u6237\u7aef","url":"https:\/\/xtrojan.org\/.\/client\/wireguard-client"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u79d1\u5b66\u4e0a\u7f51","url":"https:\/\/xtrojan.org\/.\/bgfw"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Shadowsocks\/SS\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/shadowsocks"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"ShadowsocksR\/SSR\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/shadowsocksr"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"V2Ray\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/v2ray"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Trojan\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/trojan"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Trojan-Go\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/trojan-go"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Xray\u6559\u7a0b","url":"https:\/\/xtrojan.org\/.\/bgfw\/xray"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u96a7\u9053\u4e2d\u8f6c","url":"https:\/\/xtrojan.org\/.\/bgfw\/tunnel-transfer"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u7f51\u7edc\u52a0\u901f","url":"https:\/\/xtrojan.org\/.\/speeder"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Google BBR","url":"https:\/\/xtrojan.org\/.\/speeder\/bbr"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u9510\u901f\u52a0\u901f","url":"https:\/\/xtrojan.org\/.\/speeder\/serverspeeder"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u817e\u8bafTCPA","url":"https:\/\/xtrojan.org\/.\/speeder\/tcpa"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"KCPTUN","url":"https:\/\/xtrojan.org\/.\/speeder\/kcptun"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u5468\u8fb9","url":"https:\/\/xtrojan.org\/.\/relevant"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"Just My Socks","url":"https:\/\/xtrojan.org\/.\/relevant\/justmysocks"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/.\/free-node"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39SS\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/free-ss-shadowsocks"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39SSR\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/free-ssr-shadowsocksr"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39V2Ray\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/free-v2ray"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39Trojan\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/free-trojan"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u514d\u8d39Xray\u8282\u70b9\u5206\u4eab","url":"https:\/\/xtrojan.org\/free-xray-xtls"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u5173\u4e8eXTrojan","url":"https:\/\/xtrojan.org\/.\/about"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u5173\u4e8eXTrojan\u9ed1\u79d1\u6280","url":"https:\/\/xtrojan.org\/about-us"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"XTrojan\u9ed1\u79d1\u6280\u8d77\u822a","url":"https:\/\/xtrojan.org\/about\/xtrojan-was-born.html"},{"@context":"https:\/\/schema.org\/","@type":"SiteNavigationElement","@id":"https:\/\/xtrojan.org#\u4e3b\u5bfc\u822a\u83dc\u5355","name":"\u955c\u50cf\u7ad9","url":"https:\/\/xtrojancc.github.io"}]},
+{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","@id":"https:\/\/xtrojan.org\/blog\/ax3600-shellclash.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/xtrojan.org","name":"XTrojan\u9ed1\u79d1\u6280"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/xtrojan.org\/blog\/ax3600-shellclash.html","name":"AX3600 ShellClash \u6559\u7a0b\uff5c\u5b98\u65b9\u56fa\u4ef6\u4f7f\u7528\u4ee3\u7406 - XTrojan\u9ed1\u79d1\u6280"}}]}]
+</script>
+<link rel="icon" href="https://xtrojan.org/wp-content/uploads/2021/03/XTrojanCC_Avatar-150x150.png" sizes="32x32">
+<link rel="icon" href="https://xtrojan.org/wp-content/uploads/2021/03/XTrojanCC_Avatar.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://xtrojan.org/wp-content/uploads/2021/03/XTrojanCC_Avatar.png">
+<meta name="msapplication-TileImage" content="https://xtrojan.org/wp-content/uploads/2021/03/XTrojanCC_Avatar.png">
+<style type="text/css" id="wp-custom-css">
+pre{ 
+white-space:pre-wrap; /* css3.0 */ 
+white-space:-moz-pre-wrap; /* Firefox */ 
+white-space:-pre-wrap; /* Opera 4-6 */ 
+white-space:-o-pre-wrap; /* Opera 7 */ 
+word-wrap:break-word; /* Internet Explorer 5.5  */ 
+}		</style>
+<style>#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}#wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {
+            width: auto;
+            height: auto;
+        }
+        </style></head>
+<body class="post-template-default single single-post postid-3783 single-format-standard content-sidebar main-layout-content-sidebar sidebar_vertical_border site-full-width menu_sidebar_slide_left not-touch-screen">
+<div id="page" class="site box-shadow">
+<a class="skip-link screen-reader-text" href="https://xtrojan.org/blog/ax3600-shellclash.html#site-content">跳到内容</a>
+<a class="close is-size-medium  close-panel close-sidebar-panel" href="https://xtrojan.org/blog/ax3600-shellclash.html#">
+<span class="hamburger hamburger--squeeze is-active">
+<span class="hamburger-box">
+<span class="hamburger-inner"><span class="screen-reader-text">Menu</span></span>
+</span>
+</span>
+<span class="screen-reader-text">Close</span>
+</a><header id="masthead" class="site-header header-v2"><div id="masthead-inner" class="site-header-inner">							<div class="header-top header--row layout-full-contained" id="cb-row--header-top" data-row-id="top" data-show-on="desktop">
+<div class="header--row-inner header-top-inner dark-mode">
+<div class="customify-container">
+<div class="customify-grid  cb-row--desktop hide-on-mobile hide-on-tablet customify-grid-middle"><div class="row-v2 row-v2-top no-center"><div class="col-v2 col-v2-left"><div class="item--inner builder-item--html" data-section="header_html" data-item-id="html"><div class="builder-header-html-item item--html"><p>XTrojan黑科技专注于科学上网和周边信息分享，不涉及且更不会参与任何有关政治、宗教、黄赌毒、诈骗和博彩等有关的不良行为。如果您对本站有任何意见和建议，请移步至相关文章评论区反馈。</p>
+</div></div></div><div class="col-v2 col-v2-right"><div class="item--inner builder-item--social-icons" data-section="header_social_icons" data-item-id="social-icons"><ul class="header-social-icons customify-builder-social-icons color-default"><li><a class="social-icon-facebook shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Facebook"><i class="social-icon fa fa-facebook" title="Facebook"></i></a></li><li><a class="social-icon-twitter shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Twitter"><i class="social-icon fa fa-twitter" title="Twitter"></i></a></li><li><a class="social-icon-youtube-play shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Youtube"><i class="social-icon fa fa-youtube-play" title="Youtube"></i></a></li><li><a class="social-icon-instagram shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Instagram"><i class="social-icon fa fa-instagram" title="Instagram"></i></a></li><li><a class="social-icon-pinterest shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Pinterest"><i class="social-icon fa fa-pinterest" title="Pinterest"></i></a></li></ul></div></div></div></div>									</div>
+</div>
+</div>
+<div class="header-main header--row layout-full-contained" id="cb-row--header-main" data-row-id="main" data-show-on="desktop mobile">
+<div class="header--row-inner header-main-inner light-mode">
+<div class="customify-container">
+<div class="customify-grid  cb-row--desktop hide-on-mobile hide-on-tablet customify-grid-middle"><div class="row-v2 row-v2-main no-center"><div class="col-v2 col-v2-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">		<div class="site-branding logo-top">
+<div class="site-name-desc">						<p class="site-title">
+<a href="https://xtrojan.org/" rel="home follow noopener noreferrer" data-wpel-link="internal" target="_self">XTrojan黑科技</a>
+</p>
+<p class="site-description text-uppercase text-xsmall">SS/SSR/V2Ray/Xray/Trojan科学上网</p>
+</div>		</div><!-- .site-branding -->
+</div><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><nav id="site-navigation-main-desktop" class="site-navigation primary-menu primary-menu-main nav-menu-desktop primary-menu-desktop style-plain"><ul id="menu-%e4%b8%bb%e5%af%bc%e8%88%aa%e8%8f%9c%e5%8d%95" class="primary-menu-ul menu nav-menu" aria-expanded="false"><li id="menu-item--main-desktop-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-72"><a href="https://xtrojan.org/" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">首页</span></a></li>
+<li id="menu-item--main-desktop-1858" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1858"><a href="https://xtrojan.org/wiki" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">百科</span></a></li>
+<li id="menu-item--main-desktop-98" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="https://xtrojan.org/server" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">服务器</span></a></li>
+<li id="menu-item--main-desktop-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82"><a href="https://xtrojan.org/client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">客户端<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="https://xtrojan.org/client/ss-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Shadowsocks/SS客户端</span></a></li>
+<li id="menu-item--main-desktop-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77"><a href="https://xtrojan.org/client/ssr-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">ShadowsocksR/SSR客户端</span></a></li>
+<li id="menu-item--main-desktop-78" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"><a href="https://xtrojan.org/client/v2ray-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">V2Ray客户端</span></a></li>
+<li id="menu-item--main-desktop-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="https://xtrojan.org/client/trojan-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan客户端</span></a></li>
+<li id="menu-item--main-desktop-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="https://xtrojan.org/client/trojan-go-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan-Go客户端</span></a></li>
+<li id="menu-item--main-desktop-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="https://xtrojan.org/client/xray-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">XTLS/Xray客户端</span></a></li>
+<li id="menu-item--main-desktop-84" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-84"><a href="https://xtrojan.org/client/wireguard-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">WireGuard客户端</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-83" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-83"><a href="https://xtrojan.org/bgfw" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">科学上网<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="https://xtrojan.org/bgfw/shadowsocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Shadowsocks/SS教程</span></a></li>
+<li id="menu-item--main-desktop-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="https://xtrojan.org/bgfw/shadowsocksr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">ShadowsocksR/SSR教程</span></a></li>
+<li id="menu-item--main-desktop-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a href="https://xtrojan.org/bgfw/v2ray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">V2Ray教程</span></a></li>
+<li id="menu-item--main-desktop-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="https://xtrojan.org/bgfw/trojan" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan教程</span></a></li>
+<li id="menu-item--main-desktop-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a href="https://xtrojan.org/bgfw/trojan-go" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan-Go教程</span></a></li>
+<li id="menu-item--main-desktop-97" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a href="https://xtrojan.org/bgfw/xray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Xray教程</span></a></li>
+<li id="menu-item--main-desktop-2629" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2629"><a href="https://xtrojan.org/bgfw/tunnel-transfer" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">隧道中转</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-100"><a href="https://xtrojan.org/speeder" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">网络加速<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a href="https://xtrojan.org/speeder/bbr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Google BBR</span></a></li>
+<li id="menu-item--main-desktop-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="https://xtrojan.org/speeder/serverspeeder" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">锐速加速</span></a></li>
+<li id="menu-item--main-desktop-103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="https://xtrojan.org/speeder/tcpa" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">腾讯TCPA</span></a></li>
+<li id="menu-item--main-desktop-102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-102"><a href="https://xtrojan.org/speeder/kcptun" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">KCPTUN</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-105"><a href="https://xtrojan.org/relevant" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">周边<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="https://xtrojan.org/relevant/justmysocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Just My Socks</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-2341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2341"><a href="https://xtrojan.org/free-node" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费节点分享<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a href="https://xtrojan.org/free-ss-shadowsocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费SS节点分享</span></a></li>
+<li id="menu-item--main-desktop-499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-499"><a href="https://xtrojan.org/free-ssr-shadowsocksr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费SSR节点分享</span></a></li>
+<li id="menu-item--main-desktop-519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519"><a href="https://xtrojan.org/free-v2ray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费V2Ray节点分享</span></a></li>
+<li id="menu-item--main-desktop-525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://xtrojan.org/free-trojan" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费Trojan节点分享</span></a></li>
+<li id="menu-item--main-desktop-532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532"><a href="https://xtrojan.org/free-xray-xtls" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费Xray节点分享</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74"><a href="https://xtrojan.org/about" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">关于XTrojan<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0">
+<li id="menu-item--main-desktop-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://xtrojan.org/about-us" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">关于XTrojan黑科技</span></a></li>
+<li id="menu-item--main-desktop-1764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1764"><a href="https://xtrojan.org/about/xtrojan-was-born.html" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">XTrojan黑科技起航</span></a></li>
+</ul>
+</li>
+<li id="menu-item--main-desktop-4026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4026"><a href="https://xtrojancc.github.io/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer"><span class="link-before">镜像站</span></a></li>
+</ul></nav></div></div><div class="col-v2 col-v2-right"><div class="item--inner builder-item--search_icon" data-section="search_icon" data-item-id="search_icon"><div class="header-search_icon-item item--search_icon js-added search-left">		<a class="search-icon" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="open search tool">
+<span class="ic-search">
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+<path fill="currentColor" fill-rule="evenodd" d="M12.514 14.906a8.264 8.264 0 0 1-4.322 1.21C3.668 16.116 0 12.513 0 8.07 0 3.626 3.668.023 8.192.023c4.525 0 8.193 3.603 8.193 8.047 0 2.033-.769 3.89-2.035 5.307l4.999 5.552-1.775 1.597-5.06-5.62zm-4.322-.843c3.37 0 6.102-2.684 6.102-5.993 0-3.31-2.732-5.994-6.102-5.994S2.09 4.76 2.09 8.07c0 3.31 2.732 5.993 6.102 5.993z"></path>
+</svg>
+</span>
+<span class="ic-close">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" fill="currentColor" style="enable-background:new 0 0 612 612;" xml:space="preserve"><g><g id="cross"><g><polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397 306,341.411 576.521,611.397 612,575.997 341.459,306.011 "></polygon></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+</span>
+<span class="arrow-down"></span>
+</a>
+<div class="header-search-modal-wrapper">
+<form role="search" class="header-search-modal header-search-form" action="https://xtrojan.org/">
+<label>
+<span class="screen-reader-text">搜索：</span>
+<input type="search" class="search-field" placeholder="站内搜索 ..." value="" name="s" title="搜索：">
+</label>
+<button type="submit" class="search-submit" aria-label="submit search">
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+<path fill="currentColor" fill-rule="evenodd" d="M12.514 14.906a8.264 8.264 0 0 1-4.322 1.21C3.668 16.116 0 12.513 0 8.07 0 3.626 3.668.023 8.192.023c4.525 0 8.193 3.603 8.193 8.047 0 2.033-.769 3.89-2.035 5.307l4.999 5.552-1.775 1.597-5.06-5.62zm-4.322-.843c3.37 0 6.102-2.684 6.102-5.993 0-3.31-2.732-5.994-6.102-5.994S2.09 4.76 2.09 8.07c0 3.31 2.732 5.993 6.102 5.993z"></path>
+</svg>
+</button>
+</form>
+</div>
+</div></div><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">		<button type="button" class="menu-mobile-toggle item-button is-size-desktop-medium is-size-tablet-medium is-size-mobile-medium" aria-label="nav icon">
+<span class="hamburger hamburger--squeeze">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</span>
+<span class="nav-icon--label hide-on-tablet hide-on-mobile">菜单</span></button>
+</div><div class="item--inner builder-item--button" data-section="header_button" data-item-id="button"><a href="https://xtrojan.org/relevant/justmysocks/just-my-socks.html" class="item--button customify-btn customify-builder-btn is-icon-before" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">选梯子</a></div></div></div></div><div class="cb-row--mobile hide-on-desktop customify-grid customify-grid-middle"><div class="row-v2 row-v2-main no-center"><div class="col-v2 col-v2-left"><div class="item--inner builder-item--logo" data-section="title_tagline" data-item-id="logo">		<div class="site-branding logo-top">
+<div class="site-name-desc">						<p class="site-title">
+<a href="https://xtrojan.org/" rel="home follow noopener noreferrer" data-wpel-link="internal" target="_self">XTrojan黑科技</a>
+</p>
+<p class="site-description text-uppercase text-xsmall">SS/SSR/V2Ray/Xray/Trojan科学上网</p>
+</div>		</div><!-- .site-branding -->
+</div></div><div class="col-v2 col-v2-right"><div class="item--inner builder-item--search_icon" data-section="search_icon" data-item-id="search_icon"><div class="header-search_icon-item item--search_icon js-added search-right">		<a class="search-icon" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="open search tool">
+<span class="ic-search">
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+<path fill="currentColor" fill-rule="evenodd" d="M12.514 14.906a8.264 8.264 0 0 1-4.322 1.21C3.668 16.116 0 12.513 0 8.07 0 3.626 3.668.023 8.192.023c4.525 0 8.193 3.603 8.193 8.047 0 2.033-.769 3.89-2.035 5.307l4.999 5.552-1.775 1.597-5.06-5.62zm-4.322-.843c3.37 0 6.102-2.684 6.102-5.993 0-3.31-2.732-5.994-6.102-5.994S2.09 4.76 2.09 8.07c0 3.31 2.732 5.993 6.102 5.993z"></path>
+</svg>
+</span>
+<span class="ic-close">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px" viewBox="0 0 612 612" fill="currentColor" style="enable-background:new 0 0 612 612;" xml:space="preserve"><g><g id="cross"><g><polygon points="612,36.004 576.521,0.603 306,270.608 35.478,0.603 0,36.004 270.522,306.011 0,575.997 35.478,611.397 306,341.411 576.521,611.397 612,575.997 341.459,306.011 "></polygon></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+</span>
+<span class="arrow-down"></span>
+</a>
+<div class="header-search-modal-wrapper">
+<form role="search" class="header-search-modal header-search-form" action="https://xtrojan.org/">
+<label>
+<span class="screen-reader-text">搜索：</span>
+<input type="search" class="search-field" placeholder="站内搜索 ..." value="" name="s" title="搜索：">
+</label>
+<button type="submit" class="search-submit" aria-label="submit search">
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+<path fill="currentColor" fill-rule="evenodd" d="M12.514 14.906a8.264 8.264 0 0 1-4.322 1.21C3.668 16.116 0 12.513 0 8.07 0 3.626 3.668.023 8.192.023c4.525 0 8.193 3.603 8.193 8.047 0 2.033-.769 3.89-2.035 5.307l4.999 5.552-1.775 1.597-5.06-5.62zm-4.322-.843c3.37 0 6.102-2.684 6.102-5.993 0-3.31-2.732-5.994-6.102-5.994S2.09 4.76 2.09 8.07c0 3.31 2.732 5.993 6.102 5.993z"></path>
+</svg>
+</button>
+</form>
+</div>
+</div></div><div class="item--inner builder-item--nav-icon" data-section="header_menu_icon" data-item-id="nav-icon">		<button type="button" class="menu-mobile-toggle item-button is-size-desktop-medium is-size-tablet-medium is-size-mobile-medium" aria-label="nav icon">
+<span class="hamburger hamburger--squeeze">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</span>
+<span class="nav-icon--label hide-on-tablet hide-on-mobile">菜单</span></button>
+</div></div></div></div>									</div>
+</div>
+</div>
+</div></header>	<div id="site-content" class="site-content">
+<div class="customify-container">
+<div class="customify-grid">
+<main id="main" class="content-area customify-col-9_sm-12">
+<div class="content-inner">
+<article id="post-3783" class="entry entry-single post-3783 post type-post status-publish format-standard has-post-thumbnail hentry category-blog tag-ax3600 tag-shellclash">
+<h1 class="entry-title entry--item h2">AX3600 ShellClash 教程｜官方固件使用代理</h1>			<div class="entry-meta entry--item text-uppercase text-xsmall link-meta">
+<span class="meta-item byline"> <span class="author vcard"><a class="url fn n" href="https://xtrojan.org/author/xtrojan" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><i class="fa fa-user-circle-o"></i> XTrojan黑科技</a></span></span><span class="sep"></span><span class="meta-item posted-on"><a href="https://xtrojan.org/blog/ax3600-shellclash.html" rel="bookmark follow noopener noreferrer" data-wpel-link="internal" target="_self"><i class="fa fa-clock-o" aria-hidden="true"></i> <time class="entry-date published" datetime="2022-08-26T07:17:38+08:00">2022年8月26日</time></a></span><span class="sep"></span><span class="meta-item meta-cat"><a href="https://xtrojan.org/blog" rel="tag follow noopener noreferrer" data-wpel-link="internal" target="_self"><i class="fa fa-folder-open-o" aria-hidden="true"></i> 博文</a></span><span class="sep"></span><span class="meta-item comments-link"><a href="https://xtrojan.org/blog/ax3600-shellclash.html#respond" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><i class="fa fa-comments-o"></i> 0条评论</a></span>			</div><!-- .entry-meta -->
+<div class="entry-content entry--item">
+<div class="code-block code-block-3" style="margin: 8px 0; clear: both;">
+<strong>机场加速器梯子推荐：</strong><a href="https://www.xuantizi.net/best-ss-ssr-v2ray-trojan-xray-proxy.html" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">优质SS/SSR/Trojan/Xray/V2Ray机场推荐 | IPLC/IEPL专线加速器梯子推荐 | 解锁奈飞Netflix/HBO/Hulu等国外流媒体</a></div>
+<p>小米&nbsp;AX3600 采用的是高通 IPQ8071A 4核心 1.4GHz A53 的 CPU，外加上双核主频高达 1.7GHz 的 NPU，这让这款路由器的跑「加密解密」类的代理性能特别特别的好。开启 SSH 和 安装 ShellClash 都不会影响固件正常的更新升级，也不会影响官方固件的功能， 如果你有这方面的需求会是非常棒的选择。</p>
+<p>这个教程会教你解锁小米 AX3600 的 SSH，并使用 ShellClash「基于命令行的 Clash」进行代理。</p>
+<p>该教程主要参考了：</p>
+<ul>
+<li><a href="https://www.right.com.cn/forum/thread-4046020-1-1.html" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">[AX3600] 小米ax3600获取root权限【简单快速】【修复丢ssid】</a></li>
+<li><a href="https://xtrojan.org/client/installing-and-using-shellclash-on-the-router.html" target="_self" rel="noopener noreferrer follow" data-wpel-link="internal">在路由器上安装及使用 ShellClash 的教程</a></li>
+</ul>
+<p>你基本不需要任何准备，有台能上网的电脑甚至手机都可以，最好用网线连接到小米 AX3600 路由器。</p>
+<p>提前下载好文件（旧版固件和脚本）：链接: https://pan.baidu.com/s/17LWkIHdcuhNcHFWbpLQdmA 提取码: t1gg</p>
+<div id="ez-toc-container" class="ez-toc-v2_0_28 counter-hierarchy counter-decimal ez-toc-grey"></div>
+<h2 id="开启-ax3600-ssh"><span class="ez-toc-section" id="%E5%BC%80%E5%90%AF_AX3600_SSH"></span><span id="%E5%BC%80%E5%90%AF_AX3600_SSH" class="ez-toc-section"></span>开启 AX3600 SSH<span class="ez-toc-section-end"></span></h2>
+<h3 id="降级"><span class="ez-toc-section" id="%E9%99%8D%E7%BA%A7"></span><span id="%E9%99%8D%E7%BA%A7" class="ez-toc-section"></span>降级<span class="ez-toc-section-end"></span></h3>
+<p>下载 AX3600 1.0.17 的固件，在路由器后台选择本地「固件升级」，就会清除现有数据降级，等待降级完成后重新设置好路由器即可。</p>
+<h3 id="获取后台-stok"><span class="ez-toc-section" id="%E8%8E%B7%E5%8F%96%E5%90%8E%E5%8F%B0_STOK"></span><span id="%E8%8E%B7%E5%8F%96%E5%90%8E%E5%8F%B0_STOK" class="ez-toc-section"></span>获取后台 STOK<span class="ez-toc-section-end"></span></h3>
+<p><img fetchpriority="high" decoding="async" class="aligncenter size-full wp-image-3785" title="AX3600 ShellClash 教程｜官方固件使用代理插图" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图" width="1280" height="735" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2-300x172.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2-1024x588.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0320E4B88BE58D884.43.49-2-768x441.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"><br>
+登陆小米路由器后台后，浏览器地址栏 stok= 后面的一段内容即是（选中部分），准备好备用。</p>
+<h3 id="获取-ssh"><span class="ez-toc-section" id="%E8%8E%B7%E5%8F%96_SSH"></span><span id="%E8%8E%B7%E5%8F%96_SSH" class="ez-toc-section"></span>获取 SSH<span class="ez-toc-section-end"></span></h3>
+<pre><code class="hljs apache"><span class="hljs-attribute">http</span>://192.168.31.1/cgi-bin/luci/;stok=/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h<span class="hljs-number">%3</span>B<span class="hljs-number">%20</span>nvram<span class="hljs-number">%20</span>set<span class="hljs-number">%20</span>ssh_en<span class="hljs-number">%3</span>D1<span class="hljs-number">%3</span>B<span class="hljs-number">%20</span>nvram<span class="hljs-number">%20</span>commit<span class="hljs-number">%3</span>B<span class="hljs-number">%20</span>sed<span class="hljs-number">%20</span>-i<span class="hljs-number">%20</span>'s<span class="hljs-number">%2</span>Fchannel<span class="hljs-number">%3</span>D.*<span class="hljs-number">%2</span>Fchannel<span class="hljs-number">%3</span>D<span class="hljs-number">%5</span>C<span class="hljs-number">%22</span>debug<span class="hljs-number">%5</span>C<span class="hljs-number">%22</span><span class="hljs-number">%2</span>Fg'<span class="hljs-number">%20</span><span class="hljs-number">%2</span>Fetc<span class="hljs-number">%2</span>Finit.d<span class="hljs-number">%2</span>Fdropbear<span class="hljs-number">%3</span>B<span class="hljs-number">%20</span><span class="hljs-number">%2</span>Fetc<span class="hljs-number">%2</span>Finit.d<span class="hljs-number">%2</span>Fdropbear<span class="hljs-number">%20</span>start<span class="hljs-number">%3</span>B
+</code></pre>
+<p>将&nbsp;替换为上一步的值，替换完成后复制到浏览器打开。</p>
+<h3 id="修改默认-ssh-密码为-admin"><span class="ez-toc-section" id="%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4_SSH_%E5%AF%86%E7%A0%81%E4%B8%BA_admin"></span><span id="%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4_SSH_%E5%AF%86%E7%A0%81%E4%B8%BA_admin" class="ez-toc-section"></span>修改默认 SSH 密码为 admin<span class="ez-toc-section-end"></span></h3>
+<pre><code class="hljs apache"><span class="hljs-attribute">http</span>://192.168.31.1/cgi-bin/luci/;stok=/api/misystem/set_config_iotdev?bssid=Xiaomi&amp;user_id=longdike&amp;ssid=-h<span class="hljs-number">%3</span>B<span class="hljs-number">%20</span>echo<span class="hljs-number">%20</span>-e<span class="hljs-number">%20</span>'admin<span class="hljs-number">%5</span>Cnadmin'<span class="hljs-number">%20</span><span class="hljs-number">%7</span>C<span class="hljs-number">%20</span>passwd<span class="hljs-number">%20</span>root<span class="hljs-number">%3</span>B
+</code></pre>
+<p>将&nbsp;替换为上上一步的值，替换完成后复制到浏览器打开。</p>
+<h3 id="备份"><span class="ez-toc-section" id="%E5%A4%87%E4%BB%BD"></span><span id="%E5%A4%87%E4%BB%BD" class="ez-toc-section"></span>备份<span class="ez-toc-section-end"></span></h3>
+<p>现在应该可以通过 ssh 连接到 小米 AX3600 了，终端里执行（密码是 admin）</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">ssh</span> <span class="hljs-selector-tag">root</span>@<span class="hljs-keyword">192</span>.<span class="hljs-keyword">168</span>.<span class="hljs-keyword">31</span>.<span class="hljs-keyword">1</span>
+</code></pre>
+<p>在小米 AX3600 上执行</p>
+<pre><code class="hljs javascript">mkdir /tmp/syslogbackup/
+dd <span class="hljs-keyword">if</span>=<span class="hljs-regexp">/dev/m</span>td9 <span class="hljs-keyword">of</span>=<span class="hljs-regexp">/tmp/</span>syslogbackup/mtd9
+</code></pre>
+<p>浏览器请求该地址下载备份 http://192.168.31.1/backup/log/mtd9</p>
+<h3 id="固化-ssh"><span class="ez-toc-section" id="%E5%9B%BA%E5%8C%96_SSH"></span><span id="%E5%9B%BA%E5%8C%96_SSH" class="ez-toc-section"></span>固化 SSH<span class="ez-toc-section-end"></span></h3>
+<p>在电脑上将下载好的 fuckax3600 上传到小米 AX3600 的根目录（fuckax3600 路径下执行）</p>
+<pre><code class="hljs ruby">scp fuckax360<span class="hljs-number">0</span> root@192.<span class="hljs-number">168.31</span>.<span class="hljs-number">1</span><span class="hljs-symbol">:/tmp</span>
+</code></pre>
+<p>然后在小米 AX3600 上执行</p>
+<pre><code class="hljs nginx"><span class="hljs-attribute">chmod</span> +x /tmp/fuckax3600
+/tmp/fuckax3600 unlock
+</code></pre>
+<p>系统会自动重启</p>
+<p>重新 SCP 上传一遍脚本（因为 tmp 重启会被清空）</p>
+<pre><code class="hljs ruby">scp fuckax360<span class="hljs-number">0</span> root@192.<span class="hljs-number">168.31</span>.<span class="hljs-number">1</span><span class="hljs-symbol">:/tmp</span>
+</code></pre>
+<p>SSH 重新连接上小米 AX3600 后，执行</p>
+<pre><code class="hljs cs">chmod +x /tmp/fuckax3600
+/tmp/fuckax3600 hack
+/tmp/fuckax3600 <span class="hljs-keyword">lock</span>
+</code></pre>
+<p>这会设置永久的 ssh、telnet、uart 权限，也会计算出<strong>默认的密码，记得保存</strong></p>
+<p>备注：如果升级后丢失 SSH 权限，你也可以 telnet 连接上 AX3600 后执行，即可恢复 SSH。</p>
+<p>telnet 192.168.31.1 （用户名是 root，密码是刚才得出的密码）</p>
+<p>如果你的电脑提示没有 telnet，<strong><a href="https://help.aliyun.com/document_detail/40796.html" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">Windows 打开 telnet 教程</a></strong>，Mac 则是先安装 brew 再通过 brew 安装 telnet。</p>
+<pre><code class="hljs nginx"><span class="hljs-attribute">sed</span> -i <span class="hljs-string">'s/channel=.*/channel="debug"/g'</span> /etc/init.d/dropbear
+/etc/init.d/dropbear start
+</code></pre>
+<h2 id="安装使用-shellclash"><span class="ez-toc-section" id="%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8_ShellClash"></span><span id="%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8_ShellClash" class="ez-toc-section"></span>安装使用 ShellClash<span class="ez-toc-section-end"></span></h2>
+<p>SSH 连接上小米 AX3600 执行安装（<strong>请不要使用 telnet 连接安装 ShellClash，否则会乱码</strong>；如果执行提示 ssh 连接不上请检查上一步是否执行了）</p>
+<pre><code class="hljs bash">sh -c <span class="hljs-string">"<span class="hljs-variable">$(curl -kfsSl https://cdn.jsdelivr.net/gh/juewuy/ShellClash@master/install.sh)</span>"</span> &amp;&amp; <span class="hljs-built_in">source</span> /etc/profile &amp;&gt; /dev/null
+</code></pre>
+<figure data-type="image"><img decoding="async" class="aligncenter size-full wp-image-3786" title="AX3600 ShellClash 教程｜官方固件使用代理插图1" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D887.55.06-1.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图1" width="1280" height="922" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.55.06-1.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.55.06-1-300x216.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.55.06-1-1024x738.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.55.06-1-768x553.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>选择 1 安装到 /etc，然后再选择 1 确认安装。</p>
+<figure data-type="image"><img decoding="async" class="aligncenter size-full wp-image-3787" title="AX3600 ShellClash 教程｜官方固件使用代理插图2" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D887.56.25-1.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图2" width="1280" height="858" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.56.25-1.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.56.25-1-300x201.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.56.25-1-1024x686.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.56.25-1-768x515.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>安装好就能使用 clash 命令了 ，输入 clash 就能进入配置。这里选择 4 让局域网设备都能走代理（如果你清楚别的可以自行选择）。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3788" title="AX3600 ShellClash 教程｜官方固件使用代理插图3" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D887.59.53-1.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图3" width="1280" height="858" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.59.53-1.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.59.53-1-300x201.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.59.53-1-1024x686.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D887.59.53-1-768x515.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>推荐选择不代理 UDP 也就是 1，然后安装 DashBoard 面板也就能网页直接控制了也就是 1 。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3789" title="AX3600 ShellClash 教程｜官方固件使用代理插图4" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.01.39-1.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图4" width="1280" height="925" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.01.39-1.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.01.39-1-300x217.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.01.39-1-1024x740.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.01.39-1-768x555.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>推荐选择 Yacd 面板，界面很好看 选择 2，然后安装目录选择 1 即可。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3790" title="AX3600 ShellClash 教程｜官方固件使用代理插图5" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.05.20.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图5" width="1280" height="890" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.05.20.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.05.20-300x209.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.05.20-1024x712.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.05.20-768x534.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>1 选择导入配置文件。如果你没有 Clash 的配置文件而是 v2ray、ss、trojan 的订阅链接（你的机场会提供），你可以再选择 1 进行「在线生成 Clash 配置文件」；如果有的话可以选择 2 直接导入配置文件。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3791" title="AX3600 ShellClash 教程｜官方固件使用代理插图6" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.07.27.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图6" width="1280" height="902" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.07.27.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.07.27-300x211.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.07.27-1024x722.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.07.27-768x541.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>然后粘贴上你的订阅链接（url 链接），再选择 1 开始生成配置文件。生成配置文件后按 0 返回上层菜单即可。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3792" title="AX3600 ShellClash 教程｜官方固件使用代理插图7" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.09.41.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图7" width="1280" height="860" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.09.41.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.09.41-300x202.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.09.41-1024x688.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.09.41-768x516.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>再按 1 选择立即开启 Clash 的服务即可。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3793" title="AX3600 ShellClash 教程｜官方固件使用代理插图8" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.10.26.jpg" alt="AX3600 ShellClash 教程｜官方固件使用代理插图8" width="1280" height="815" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.10.26.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.10.26-300x191.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.10.26-1024x652.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.10.26-768x489.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>启动后你可以通过 http://192.168.31.1:9999/ui，进行节点的切换和规则的选择。当然你再按 4 选择开机启动也可以。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3794" title="AX3600 ShellClash 教程｜官方固件使用代理插图9" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-0620E4B88BE58D888.11.01.jpg" alt="截屏2021-05-06 下午8.11.01" width="1280" height="662" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.11.01.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.11.01-300x155.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.11.01-1024x530.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-0620E4B88BE58D888.11.01-768x397.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>这个时候应该就能科学上网了速度也应该不错。</p>
+<h3 id="电视-netflix-看不了"><span class="ez-toc-section" id="%E7%94%B5%E8%A7%86_Netflix_%E7%9C%8B%E4%B8%8D%E4%BA%86%EF%BC%9F"></span><span id="%E7%94%B5%E8%A7%86_Netflix_%E7%9C%8B%E4%B8%8D%E4%BA%86%EF%BC%9F" class="ez-toc-section"></span>电视 Netflix 看不了？<span class="ez-toc-section-end"></span></h3>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3795" title="AX3600 ShellClash 教程｜官方固件使用代理插图10" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/IMG_1895.jpg" alt="IMG_1895" width="1280" height="960" srcset="https://xtrojan.org/wp-content/uploads/2022/07/IMG_1895.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/IMG_1895-300x225.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/IMG_1895-1024x768.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/IMG_1895-768x576.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>如果你的电视、电视盒子碰见这种错误，可以尝试更换 ShellClash 的 DNS 模式。</p>
+<figure data-type="image"><img loading="lazy" decoding="async" class="aligncenter size-full wp-image-3796" title="AX3600 ShellClash 教程｜官方固件使用代理插图11" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/E688AAE5B18F2021-05-1020E4B88BE58D889.12.25.jpg" alt="截屏2021-05-10 下午9.12.25" width="1280" height="924" srcset="https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-1020E4B88BE58D889.12.25.jpg 1280w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-1020E4B88BE58D889.12.25-300x217.jpg 300w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-1020E4B88BE58D889.12.25-1024x739.jpg 1024w, https://xtrojan.org/wp-content/uploads/2022/07/E688AAE5B18F2021-05-1020E4B88BE58D889.12.25-768x554.jpg 768w" sizes="(max-width: 1280px) 100vw, 1280px"></figure>
+<p>将 Clash 的 DNS 运行模式切换到 fake-ip，理论上就能解决这个问题。</p>
+<h2 id="总结"><span class="ez-toc-section" id="%E6%80%BB%E7%BB%93"></span><span id="%E6%80%BB%E7%BB%93" class="ez-toc-section"></span>总结<span class="ez-toc-section-end"></span></h2>
+<p>得益于小米 AX3600 超强的 CPU + NPU 组合，跑代理速度是真不错。ShellClash 这种方案虽然没有图形化 UI 操作方便，但好在不需要刷麻烦也不稳定的 openwrt 固件，直接小米官方固件也能享受到网络「加速」的福利。</p>
+<div class="yarpp yarpp-related yarpp-related-website yarpp-template-list">
+<!-- YARPP List -->
+<h3>相关文章：</h3><ol>
+<li><a href="https://xtrojan.org/blog/redmi-ax6s-ssh-installation-shellclash.html" rel="bookmark follow noopener noreferrer" title="红米 AX6S 性能远超想象，解锁 SSH 安装 ShellClash" data-wpel-link="internal" target="_self">红米 AX6S 性能远超想象，解锁 SSH 安装 ShellClash</a></li>
+<li><a href="https://xtrojan.org/blog/shellclash-faq.html" rel="bookmark follow noopener noreferrer" title="ShellClash使用教程常见问题答疑解惑" data-wpel-link="internal" target="_self">ShellClash使用教程常见问题答疑解惑</a></li>
+<li><a href="https://xtrojan.org/blog/cmiot-ax18-shellclash.html" rel="bookmark follow noopener noreferrer" title="移动和目 AX18 ShellClash 安装教程｜最便宜的高通 WiFi 6 路由器" data-wpel-link="internal" target="_self">移动和目 AX18 ShellClash 安装教程｜最便宜的高通 WiFi 6 路由器</a></li>
+<li><a href="https://xtrojan.org/blog/redmi-ax5-xiaomi-ax1800-shellclash.html" rel="bookmark follow noopener noreferrer" title="红米AX5和小米AX1800解锁SSH｜安装使用ShellClash教程" data-wpel-link="internal" target="_self">红米AX5和小米AX1800解锁SSH｜安装使用ShellClash教程</a></li>
+</ol>
+</div>
+<!-- CONTENT END 2 -->
+</div><!-- .entry-content -->
+<div class="entry--item entry-tags tags-links">标签：<a href="https://xtrojan.org/tag/ax3600" rel="tag follow noopener noreferrer" data-wpel-link="internal" target="_self">AX3600</a>, <a href="https://xtrojan.org/tag/shellclash" rel="tag follow noopener noreferrer" data-wpel-link="internal" target="_self">ShellClash</a></div><div class="entry-post-navigation entry--item">
+<nav class="navigation post-navigation" aria-label="文章">
+<h2 class="screen-reader-text">文章导航</h2>
+<div class="nav-links"><div class="nav-previous"><a href="https://xtrojan.org/blog/redmi-ax5-xiaomi-ax1800-shellclash.html" rel="prev follow noopener noreferrer" data-wpel-link="internal" target="_self"><span class="meta-nav text-uppercase text-xsmall color-meta" aria-hidden="true">上一个</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title text-large">红米AX5和小米AX1800解锁SSH｜安装使用ShellClash教程</span></a></div><div class="nav-next"><a href="https://xtrojan.org/blog/redmi-ax6-openwrt.html" rel="next follow noopener noreferrer" data-wpel-link="internal" target="_self"><span class="meta-nav text-uppercase text-xsmall color-meta" aria-hidden="true">下一个</span> <span class="screen-reader-text">Next post:</span> <span class="post-title text-large">红米 AX6 刷 OpenWRT 教程</span></a></div></div>
+</nav></div><div class="entry-comment-form entry--item">
+<div id="comments" class="comments-area">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">发表回复 <small><a rel="follow noopener noreferrer" id="cancel-comment-reply-link" href="https://xtrojan.org/blog/ax3600-shellclash.html#respond" style="display:none;" data-wpel-link="internal" target="_self">取消回复</a></small></h3><form action="https://xtrojan.org/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">您的电子邮箱地址不会被公开。</span> <span class="required-field-message">必填项已用 <span class="required">*</span> 标注</span></p><p class="comment-form-comment"><label for="comment">评论 <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required=""></textarea></p><p class="comment-form-author"><label for="author">显示名称 <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required=""></p>
+<p class="comment-form-email"><label for="email">电子邮箱地址 <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required=""></p>
+<p class="comment-form-url"><label for="url">网站</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url"></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">在此浏览器中保存我的显示名称、邮箱地址和网站地址，以便下次评论时使用。</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="发表评论"> <input type="hidden" name="comment_post_ID" value="3783" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7f76ceceea"></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="1721826943346"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+</div><!-- #comments -->
+</div>		</article>
+</div><!-- #.content-inner -->
+              			</main><!-- #main -->
+<aside id="sidebar-primary" class="sidebar-primary customify-col-3_sm-12">
+<div class="sidebar-primary-inner sidebar-inner widget-area">
+<section id="custom_html-2" class="widget_text widget widget_custom_html"><h4 class="widget-title">↓↓↓&gt;纯正国外优质梯子推荐&lt;↓↓↓</h4><div class="textwidget custom-html-widget"><a href="https://xtrojan.org/relevant/justmysocks/just-my-socks.html" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Just My Socks - 搬瓦工官方机场梯子 | 纯正国外大商家 | 安全隐私无忧 | 极速稳定</a><br>
+</div></section>
+<section id="wpp-3" class="widget popular-posts">
+</section>
+<section id="tag_cloud-2" class="widget widget_tag_cloud"><h4 class="widget-title">标签</h4><div class="tagcloud"><a href="https://xtrojan.org/tag/clash" class="tag-cloud-link tag-link-106 tag-link-position-1" style="font-size: 17.081081081081pt;" aria-label="Clash (11 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Clash</a>
+<a href="https://xtrojan.org/tag/clash-for-android" class="tag-cloud-link tag-link-125 tag-link-position-2" style="font-size: 9.8918918918919pt;" aria-label="Clash for Android (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Clash for Android</a>
+<a href="https://xtrojan.org/tag/clash-for-windows" class="tag-cloud-link tag-link-105 tag-link-position-3" style="font-size: 11.405405405405pt;" aria-label="Clash for Windows (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Clash for Windows</a>
+<a href="https://xtrojan.org/tag/clashx" class="tag-cloud-link tag-link-107 tag-link-position-4" style="font-size: 11.405405405405pt;" aria-label="ClashX (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">ClashX</a>
+<a href="https://xtrojan.org/tag/cloudflare" class="tag-cloud-link tag-link-48 tag-link-position-5" style="font-size: 15.567567567568pt;" aria-label="Cloudflare (9 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Cloudflare</a>
+<a href="https://xtrojan.org/tag/hysteria" class="tag-cloud-link tag-link-300 tag-link-position-6" style="font-size: 13.675675675676pt;" aria-label="Hysteria (7 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Hysteria</a>
+<a href="https://xtrojan.org/tag/kitsunebi" class="tag-cloud-link tag-link-114 tag-link-position-7" style="font-size: 9.8918918918919pt;" aria-label="Kitsunebi (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Kitsunebi</a>
+<a href="https://xtrojan.org/tag/nekoray" class="tag-cloud-link tag-link-494 tag-link-position-8" style="font-size: 9.8918918918919pt;" aria-label="Nekoray (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Nekoray</a>
+<a href="https://xtrojan.org/tag/openwrt" class="tag-cloud-link tag-link-151 tag-link-position-9" style="font-size: 17.081081081081pt;" aria-label="OpenWrt (11 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">OpenWrt</a>
+<a href="https://xtrojan.org/tag/passwall" class="tag-cloud-link tag-link-184 tag-link-position-10" style="font-size: 12.72972972973pt;" aria-label="passwall (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">passwall</a>
+<a href="https://xtrojan.org/tag/qv2ray" class="tag-cloud-link tag-link-62 tag-link-position-11" style="font-size: 11.405405405405pt;" aria-label="Qv2ray (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Qv2ray</a>
+<a href="https://xtrojan.org/tag/replit" class="tag-cloud-link tag-link-470 tag-link-position-12" style="font-size: 11.405405405405pt;" aria-label="Replit (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Replit</a>
+<a href="https://xtrojan.org/tag/shadowrocket" class="tag-cloud-link tag-link-113 tag-link-position-13" style="font-size: 12.72972972973pt;" aria-label="Shadowrocket (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Shadowrocket</a>
+<a href="https://xtrojan.org/tag/shadowsocks" class="tag-cloud-link tag-link-67 tag-link-position-14" style="font-size: 17.648648648649pt;" aria-label="Shadowsocks (12 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Shadowsocks</a>
+<a href="https://xtrojan.org/tag/shadowsocksr" class="tag-cloud-link tag-link-72 tag-link-position-15" style="font-size: 12.72972972973pt;" aria-label="ShadowsocksR (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">ShadowsocksR</a>
+<a href="https://xtrojan.org/tag/shellclash" class="tag-cloud-link tag-link-420 tag-link-position-16" style="font-size: 13.675675675676pt;" aria-label="ShellClash (7 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">ShellClash</a>
+<a href="https://xtrojan.org/tag/sing-box" class="tag-cloud-link tag-link-486 tag-link-position-17" style="font-size: 11.405405405405pt;" aria-label="Sing-box (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Sing-box</a>
+<a href="https://xtrojan.org/tag/ss" class="tag-cloud-link tag-link-68 tag-link-position-18" style="font-size: 17.648648648649pt;" aria-label="SS (12 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">SS</a>
+<a href="https://xtrojan.org/tag/ssr" class="tag-cloud-link tag-link-73 tag-link-position-19" style="font-size: 15.567567567568pt;" aria-label="SSR (9 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">SSR</a>
+<a href="https://xtrojan.org/tag/ssr%e5%ae%a2%e6%88%b7%e7%ab%af" class="tag-cloud-link tag-link-21 tag-link-position-20" style="font-size: 14.621621621622pt;" aria-label="SSR客户端 (8 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">SSR客户端</a>
+<a href="https://xtrojan.org/tag/ss%e5%ae%a2%e6%88%b7%e7%ab%af" class="tag-cloud-link tag-link-20 tag-link-position-21" style="font-size: 13.675675675676pt;" aria-label="SS客户端 (7 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">SS客户端</a>
+<a href="https://xtrojan.org/tag/telegram" class="tag-cloud-link tag-link-405 tag-link-position-22" style="font-size: 9.8918918918919pt;" aria-label="Telegram (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Telegram</a>
+<a href="https://xtrojan.org/tag/trojan" class="tag-cloud-link tag-link-49 tag-link-position-23" style="font-size: 11.405405405405pt;" aria-label="Trojan (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Trojan</a>
+<a href="https://xtrojan.org/tag/trojan%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-50 tag-link-position-24" style="font-size: 8pt;" aria-label="Trojan教程 (3 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Trojan教程</a>
+<a href="https://xtrojan.org/tag/v2ray" class="tag-cloud-link tag-link-76 tag-link-position-25" style="font-size: 18.972972972973pt;" aria-label="V2Ray (14 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">V2Ray</a>
+<a href="https://xtrojan.org/tag/v2rayn" class="tag-cloud-link tag-link-104 tag-link-position-26" style="font-size: 11.405405405405pt;" aria-label="V2rayN (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">V2rayN</a>
+<a href="https://xtrojan.org/tag/v2ray%e5%ae%a2%e6%88%b7%e7%ab%af" class="tag-cloud-link tag-link-19 tag-link-position-27" style="font-size: 14.621621621622pt;" aria-label="V2Ray客户端 (8 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">V2Ray客户端</a>
+<a href="https://xtrojan.org/tag/vless" class="tag-cloud-link tag-link-99 tag-link-position-28" style="font-size: 9.8918918918919pt;" aria-label="VLESS (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">VLESS</a>
+<a href="https://xtrojan.org/tag/vless%e8%8a%82%e7%82%b9" class="tag-cloud-link tag-link-505 tag-link-position-29" style="font-size: 12.72972972973pt;" aria-label="VLESS节点 (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">VLESS节点</a>
+<a href="https://xtrojan.org/tag/vps" class="tag-cloud-link tag-link-92 tag-link-position-30" style="font-size: 12.72972972973pt;" aria-label="VPS (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">VPS</a>
+<a href="https://xtrojan.org/tag/warp" class="tag-cloud-link tag-link-257 tag-link-position-31" style="font-size: 13.675675675676pt;" aria-label="WARP (7 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">WARP</a>
+<a href="https://xtrojan.org/tag/wireguard" class="tag-cloud-link tag-link-53 tag-link-position-32" style="font-size: 18.972972972973pt;" aria-label="WireGuard (14 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">WireGuard</a>
+<a href="https://xtrojan.org/tag/x-ui" class="tag-cloud-link tag-link-253 tag-link-position-33" style="font-size: 13.675675675676pt;" aria-label="X-ui (7 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">X-ui</a>
+<a href="https://xtrojan.org/tag/xray" class="tag-cloud-link tag-link-42 tag-link-position-34" style="font-size: 22pt;" aria-label="Xray (21 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Xray</a>
+<a href="https://xtrojan.org/tag/xray%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-37 tag-link-position-35" style="font-size: 20.486486486486pt;" aria-label="Xray教程 (17 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">Xray教程</a>
+<a href="https://xtrojan.org/tag/%e4%bb%a3%e7%90%86" class="tag-cloud-link tag-link-156 tag-link-position-36" style="font-size: 9.8918918918919pt;" aria-label="代理 (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">代理</a>
+<a href="https://xtrojan.org/tag/%e4%bb%a3%e7%90%86%e5%ae%a2%e6%88%b7%e7%ab%af" class="tag-cloud-link tag-link-129 tag-link-position-37" style="font-size: 15.567567567568pt;" aria-label="代理客户端 (9 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">代理客户端</a>
+<a href="https://xtrojan.org/tag/%e5%85%8d%e8%b4%b9%e5%9f%9f%e5%90%8d" class="tag-cloud-link tag-link-295 tag-link-position-38" style="font-size: 12.72972972973pt;" aria-label="免费域名 (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">免费域名</a>
+<a href="https://xtrojan.org/tag/%e5%a5%88%e9%a3%9e" class="tag-cloud-link tag-link-120 tag-link-position-39" style="font-size: 9.8918918918919pt;" aria-label="奈飞 (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">奈飞</a>
+<a href="https://xtrojan.org/tag/%e5%ae%89%e5%8d%93%e5%ae%a2%e6%88%b7%e7%ab%af" class="tag-cloud-link tag-link-116 tag-link-position-40" style="font-size: 11.405405405405pt;" aria-label="安卓客户端 (5 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">安卓客户端</a>
+<a href="https://xtrojan.org/tag/%e5%b0%8f%e5%b0%8f%e7%99%bd%e7%99%bd%e8%af%9d%e6%96%87" class="tag-cloud-link tag-link-34 tag-link-position-41" style="font-size: 15.567567567568pt;" aria-label="小小白白话文 (9 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">小小白白话文</a>
+<a href="https://xtrojan.org/tag/%e5%b0%8f%e7%b1%b3%e8%b7%af%e7%94%b1%e5%99%a8" class="tag-cloud-link tag-link-415 tag-link-position-42" style="font-size: 12.72972972973pt;" aria-label="小米路由器 (6 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">小米路由器</a>
+<a href="https://xtrojan.org/tag/%e7%a7%91%e5%ad%a6%e4%b8%8a%e7%bd%91" class="tag-cloud-link tag-link-70 tag-link-position-43" style="font-size: 19.918918918919pt;" aria-label="科学上网 (16 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">科学上网</a>
+<a href="https://xtrojan.org/tag/%e7%ba%a2%e7%b1%b3" class="tag-cloud-link tag-link-419 tag-link-position-44" style="font-size: 9.8918918918919pt;" aria-label="红米 (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">红米</a>
+<a href="https://xtrojan.org/tag/%e8%bd%af%e8%b7%af%e7%94%b1" class="tag-cloud-link tag-link-149 tag-link-position-45" style="font-size: 9.8918918918919pt;" aria-label="软路由 (4 项)" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">软路由</a></div>
+</section><section style="position: static; margin-bottom: 0px; transition: all 0s ease 0s; transform: none; margin-top: 0px; padding: 0px; width: 304px; top: auto; display: block; height: 415.094px;"></section><section id="ezw_tco-2" class="widget ez-toc FixedWidget__fixed_widget FixedWidget__fixed_widget__pinned" style="position: fixed; margin-bottom: 0px; transition: all 0s ease 0s; transform: none; margin-top: 0px; padding: 0px; width: 304px; top: 0px; height: 415.094px;"><div id="ez-toc-widget-container" class="ez-toc-widget-container ez-toc-v2_0_68_1 ez-toc-widget counter-hierarchy ez-toc-widget-container ez-toc-affix ez-toc-widget-direction">
+<h4 class="widget-title">                                        <span class="ez-toc-title-container">
+<style>
+#ezw_tco-2 .ez-toc-title{
+font-size: 120%;
+;
+;
+}
+#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active{
+background-color: #ededed;
+}
+</style>
+<span class="ez-toc-title-toggle">
+<span class="ez-toc-title ">本文导航目录</span><a href="https://xtrojan.org/blog/ax3600-shellclash.html#" class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle" aria-label="Widget Easy TOC toggle icon"><span style="border: 0;padding: 0;margin: 0;position: absolute !important;height: 1px;width: 1px;overflow: hidden;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);white-space: nowrap;">Toggle Table of Content</span><span class=""><span class="eztoc-hide">Toggle</span><span class="ez-toc-icon-toggle-span"></span></span></a>
+</span>
+</span>
+</h4>                                        					<nav>
+<ul class="ez-toc-list ez-toc-list-level-1 "><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E5%BC%80%E5%90%AF_AX3600_SSH" title="开启 AX3600 SSH">开启 AX3600 SSH</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-2" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E9%99%8D%E7%BA%A7" title="降级">降级</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-3" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E8%8E%B7%E5%8F%96%E5%90%8E%E5%8F%B0_STOK" title="获取后台 STOK">获取后台 STOK</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-4" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E8%8E%B7%E5%8F%96_SSH" title="获取 SSH">获取 SSH</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-5" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4_SSH_%E5%AF%86%E7%A0%81%E4%B8%BA_admin" title="修改默认 SSH 密码为 admin">修改默认 SSH 密码为 admin</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-6" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E5%A4%87%E4%BB%BD" title="备份">备份</a></li><li class="ez-toc-page-1 ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-7" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E5%9B%BA%E5%8C%96_SSH" title="固化 SSH">固化 SSH</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-8" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8_ShellClash" title="安装使用 ShellClash">安装使用 ShellClash</a><ul class="ez-toc-list-level-3"><li class="ez-toc-heading-level-3"><a class="ez-toc-link ez-toc-heading-9" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E7%94%B5%E8%A7%86_Netflix_%E7%9C%8B%E4%B8%8D%E4%BA%86%EF%BC%9F" title="电视 Netflix 看不了？">电视 Netflix 看不了？</a></li></ul></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-10" href="https://xtrojan.org/blog/ax3600-shellclash.html#%E6%80%BB%E7%BB%93" title="总结">总结</a></li></ul></nav>
+</div>
+</section>	</div>
+</aside><!-- #sidebar-primary -->
+</div><!-- #.customify-grid -->
+</div><!-- #.customify-container -->
+</div><!-- #content -->
+<footer class="site-footer" id="site-footer">							<div class="footer-bottom footer--row layout-full-contained" id="cb-row--footer-bottom" data-row-id="bottom" data-show-on="desktop">
+<div class="footer--row-inner footer-bottom-inner dark-mode">
+<div class="customify-container">
+<div class="customify-grid  customify-grid-top"><div class="customify-col-12_md-12_sm-12_xs-12 builder-item builder-first--footer_copyright" data-push-left="_sm-0"><div class="item--inner builder-item--footer_copyright" data-section="footer_copyright" data-item-id="footer_copyright"><div class="builder-footer-copyright-item footer-copyright"><p>版权 © 2024 XTrojan黑科技 – 本站主题由 <strong><a href="https://xtrojan.org/" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">XTrojan黑科技</a></strong> 持续更新，并提供本地化技术支持。</p>
+</div></div></div></div>									</div>
+</div>
+</div>
+</footer></div><!-- #page -->
+<div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<!-- Matomo -->
+<script>
+var _paq = window._paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+var u="//zz.tianyan.de/";
+_paq.push(['setTrackerUrl', u+'matomo.php']);
+_paq.push(['setSiteId', '7']);
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Matomo Code -->
+</div>
+<!-- <link rel='stylesheet' id='yarppRelatedCss-css' href='https://xtrojan.org/wp-content/plugins/yet-another-related-posts-plugin/style/related.css?ver=5.30.10' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/8heiu.css" media="all">
+<script type="text/javascript" id="q2w3_fixed_widget-js-extra">
+/* <![CDATA[ */
+var q2w3_sidebar_options = [{"sidebar":"sidebar-1","use_sticky_position":false,"margin_top":0,"margin_bottom":0,"stop_elements_selectors":"","screen_max_width":0,"screen_max_height":0,"widgets":["#ezw_tco-2"]}];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/frontend.min.js" id="q2w3_fixed_widget-js"></script>
+<script type="text/javascript" id="wpfront-scroll-top-js-extra">
+/* <![CDATA[ */
+var wpfront_scroll_top_data = {"data":{"css":"#wpfront-scroll-top-container{display:none;position:fixed;cursor:pointer;z-index:9999;opacity:0}#wpfront-scroll-top-container div.text-holder{padding:3px 10px;border-radius:3px;-webkit-border-radius:3px;-webkit-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);-moz-box-shadow:4px 4px 5px 0 rgba(50,50,50,.5);box-shadow:4px 4px 5px 0 rgba(50,50,50,.5)}#wpfront-scroll-top-container a{outline-style:none;box-shadow:none;text-decoration:none}#wpfront-scroll-top-container {right: 20px;bottom: 20px;}        #wpfront-scroll-top-container img {\n            width: auto;\n            height: auto;\n        }\n        ","html":"<div id=\"wpfront-scroll-top-container\"><img src=\"https:\/\/xtrojan.org\/wp-content\/plugins\/wpfront-scroll-top\/images\/icons\/1.png\" alt=\"\" title=\"\" \/><\/div>","data":{"hide_iframe":false,"button_fade_duration":200,"auto_hide":false,"auto_hide_after":2,"scroll_offset":100,"button_opacity":0.8,"button_action":"top","button_action_element_selector":"","button_action_container_selector":"html, body","button_action_element_offset":"0","scroll_duration":400}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/wpfront-scroll-top.min.js" id="wpfront-scroll-top-js"></script>
+<script type="text/javascript" id="customify-themejs-js-extra">
+/* <![CDATA[ */
+var Customify_JS = {"is_rtl":"","css_media_queries":{"all":"%s","desktop":"%s","tablet":"@media screen and (max-width: 1024px) { %s }","mobile":"@media screen and (max-width: 568px) { %s }"},"sidebar_menu_no_duplicator":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/theme.min.js" id="customify-themejs-js"></script><div id="header-menu-sidebar" class="header-menu-sidebar menu-sidebar-panel dark-mode"><div id="header-menu-sidebar-bg" class="header-menu-sidebar-bg"><div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner"><div class="builder-item-sidebar mobile-item--html"><div class="item--inner" data-item-id="html" data-section="header_html" style="transition-delay: 0.2s;"><div class="builder-header-html-item item--html"><p>XTrojan黑科技专注于科学上网和周边信息分享，不涉及且更不会参与任何有关政治、宗教、黄赌毒、诈骗和博彩等有关的不良行为。如果您对本站有任何意见和建议，请移步至相关文章评论区反馈。</p>
+</div></div></div><div class="builder-item-sidebar mobile-item--search_box"><div class="item--inner" data-item-id="search_box" data-section="search_box" style="transition-delay: 0.4s;"><div class="header-search_box-item item--search_box">		<form role="search" class="header-search-form " action="https://xtrojan.org/">
+<div class="search-form-fields">
+<span class="screen-reader-text">搜索：</span>
+<input type="search" class="search-field" placeholder="站内搜索 ..." value="" name="s" title="搜索：">
+</div>
+<button type="submit" class="search-submit" aria-label="Submit Search">
+<svg aria-hidden="true" focusable="false" role="presentation" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+<path fill="currentColor" fill-rule="evenodd" d="M12.514 14.906a8.264 8.264 0 0 1-4.322 1.21C3.668 16.116 0 12.513 0 8.07 0 3.626 3.668.023 8.192.023c4.525 0 8.193 3.603 8.193 8.047 0 2.033-.769 3.89-2.035 5.307l4.999 5.552-1.775 1.597-5.06-5.62zm-4.322-.843c3.37 0 6.102-2.684 6.102-5.993 0-3.31-2.732-5.994-6.102-5.994S2.09 4.76 2.09 8.07c0 3.31 2.732 5.993 6.102 5.993z"></path>
+</svg>
+</button>
+</form>
+</div></div></div><div class="builder-item-sidebar mobile-item--primary-menu mobile-item--menu "><div class="item--inner" data-item-id="primary-menu" data-section="header_menu_primary" style="transition-delay: 0.6s;"><nav id="site-navigation-sidebar-mobile" class="site-navigation primary-menu primary-menu-sidebar nav-menu-mobile primary-menu-mobile style-plain"><ul id="menu-%e4%b8%bb%e5%af%bc%e8%88%aa%e8%8f%9c%e5%8d%95" class="primary-menu-ul menu nav-menu"><li id="menu-item--sidebar-mobile-72" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-72"><a href="https://xtrojan.org/" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">首页</span></a></li>
+<li id="menu-item--sidebar-mobile-1858" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1858"><a href="https://xtrojan.org/wiki" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">百科</span></a></li>
+<li id="menu-item--sidebar-mobile-98" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="https://xtrojan.org/server" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">服务器</span></a></li>
+<li id="menu-item--sidebar-mobile-82" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-82 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">客户端<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-76" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-76"><a href="https://xtrojan.org/client/ss-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Shadowsocks/SS客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-77"><a href="https://xtrojan.org/client/ssr-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">ShadowsocksR/SSR客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-78" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78"><a href="https://xtrojan.org/client/v2ray-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">V2Ray客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-79" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-79"><a href="https://xtrojan.org/client/trojan-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-80" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-80"><a href="https://xtrojan.org/client/trojan-go-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan-Go客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-81" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-81"><a href="https://xtrojan.org/client/xray-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">XTLS/Xray客户端</span></a></li>
+<li id="menu-item--sidebar-mobile-84" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-84"><a href="https://xtrojan.org/client/wireguard-client" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">WireGuard客户端</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-83" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-83 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/bgfw" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">科学上网<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-92" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-92"><a href="https://xtrojan.org/bgfw/shadowsocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Shadowsocks/SS教程</span></a></li>
+<li id="menu-item--sidebar-mobile-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="https://xtrojan.org/bgfw/shadowsocksr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">ShadowsocksR/SSR教程</span></a></li>
+<li id="menu-item--sidebar-mobile-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a href="https://xtrojan.org/bgfw/v2ray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">V2Ray教程</span></a></li>
+<li id="menu-item--sidebar-mobile-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="https://xtrojan.org/bgfw/trojan" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan教程</span></a></li>
+<li id="menu-item--sidebar-mobile-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a href="https://xtrojan.org/bgfw/trojan-go" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Trojan-Go教程</span></a></li>
+<li id="menu-item--sidebar-mobile-97" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a href="https://xtrojan.org/bgfw/xray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Xray教程</span></a></li>
+<li id="menu-item--sidebar-mobile-2629" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2629"><a href="https://xtrojan.org/bgfw/tunnel-transfer" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">隧道中转</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-100" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-100 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/speeder" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">网络加速<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-101" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101"><a href="https://xtrojan.org/speeder/bbr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Google BBR</span></a></li>
+<li id="menu-item--sidebar-mobile-104" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-104"><a href="https://xtrojan.org/speeder/serverspeeder" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">锐速加速</span></a></li>
+<li id="menu-item--sidebar-mobile-103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-103"><a href="https://xtrojan.org/speeder/tcpa" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">腾讯TCPA</span></a></li>
+<li id="menu-item--sidebar-mobile-102" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-102"><a href="https://xtrojan.org/speeder/kcptun" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">KCPTUN</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-105" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-105 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/relevant" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">周边<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="https://xtrojan.org/relevant/justmysocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">Just My Socks</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-2341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2341 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/free-node" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费节点分享<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a href="https://xtrojan.org/free-ss-shadowsocks" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费SS节点分享</span></a></li>
+<li id="menu-item--sidebar-mobile-499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-499"><a href="https://xtrojan.org/free-ssr-shadowsocksr" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费SSR节点分享</span></a></li>
+<li id="menu-item--sidebar-mobile-519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-519"><a href="https://xtrojan.org/free-v2ray" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费V2Ray节点分享</span></a></li>
+<li id="menu-item--sidebar-mobile-525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-525"><a href="https://xtrojan.org/free-trojan" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费Trojan节点分享</span></a></li>
+<li id="menu-item--sidebar-mobile-532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-532"><a href="https://xtrojan.org/free-xray-xtls" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">免费Xray节点分享</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-74" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-74 toggle--added"><span class="nav-toggle-icon"><i class="nav-icon-angle"></i></span><a href="https://xtrojan.org/about" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">关于XTrojan<span class="nav-icon-angle">&nbsp;</span></span></a>
+<ul class="sub-menu sub-lv-0" style="overflow: hidden; height: 0px;">
+<li id="menu-item--sidebar-mobile-73" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="https://xtrojan.org/about-us" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">关于XTrojan黑科技</span></a></li>
+<li id="menu-item--sidebar-mobile-1764" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1764"><a href="https://xtrojan.org/about/xtrojan-was-born.html" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer"><span class="link-before">XTrojan黑科技起航</span></a></li>
+</ul>
+</li>
+<li id="menu-item--sidebar-mobile-4026" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4026"><a href="https://xtrojancc.github.io/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer"><span class="link-before">镜像站</span></a></li>
+</ul></nav></div></div><div class="builder-item-sidebar mobile-item--social-icons"><div class="item--inner" data-item-id="social-icons" data-section="header_social_icons" style="transition-delay: 0.8s;"><ul class="header-social-icons customify-builder-social-icons color-default"><li><a class="social-icon-facebook shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Facebook"><i class="social-icon fa fa-facebook" title="Facebook"></i></a></li><li><a class="social-icon-twitter shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Twitter"><i class="social-icon fa fa-twitter" title="Twitter"></i></a></li><li><a class="social-icon-youtube-play shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Youtube"><i class="social-icon fa fa-youtube-play" title="Youtube"></i></a></li><li><a class="social-icon-instagram shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Instagram"><i class="social-icon fa fa-instagram" title="Instagram"></i></a></li><li><a class="social-icon-pinterest shape-circle" rel="nofollow noopener" target="_blank" href="https://xtrojan.org/blog/ax3600-shellclash.html#" aria-label="Pinterest"><i class="social-icon fa fa-pinterest" title="Pinterest"></i></a></li></ul></div></div><div class="builder-item-sidebar mobile-item--button"><div class="item--inner" data-item-id="button" data-section="header_button" style="transition-delay: 1s;"><a href="https://xtrojan.org/relevant/justmysocks/just-my-socks.html" class="item--button customify-btn customify-builder-btn is-icon-before" data-wpel-link="internal" target="_self" rel="follow noopener noreferrer">选梯子</a></div></div></div></div></div>
+<script type="text/javascript" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/comment-reply.min.js" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script defer="" type="text/javascript" src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/akismet-frontend.js" id="akismet-frontend-js"></script>
+
+<div id="wpfront-scroll-top-container" style="opacity: 0.8; display: block;"><img src="./AX3600 ShellClash 教程｜官方固件使用代理 - XTrojan黑科技_files/1.png" alt="" title=""></div></body></html>
